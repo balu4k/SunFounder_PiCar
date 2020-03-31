@@ -40,7 +40,7 @@ def servo_install():
         time.sleep(1)
 
 def main():
-    setup()
+    #setup()
     if len(sys.argv) >= 2:
         if sys.argv[1] == "servo-install":
             servo_install()
@@ -76,7 +76,7 @@ def usage():
 class ADC(PCF8591.PCF8591):
     pass
 
-def setup():
-    pwm=PCA9685.PWM(bus_number=1)
-    pwm.setup()
-    pwm.frequency = 60
+#def setup():
+    #pwm=PCA9685.PWM(bus_number=1)
+    #pwm.setup()
+    #pwm.frequency = 60
